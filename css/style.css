@@ -1,0 +1,165 @@
+/* FONTS.GOOGLE */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/* GENERAL STYLE */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.main-container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    font-weight: 900;
+    color: #191919;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #191919;
+}
+
+.subsections-title {
+    font-weight: 400;
+    color: #191919;
+}
+
+.paragraph {
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    color: #191919;
+}
+
+.title,
+.copyright {
+    display: block;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.item-link {
+    text-decoration: none;
+    color: #f4f4f4;
+
+}
+
+.item-link:hover {
+    color: #ccc;
+}
+
+/* CUSTOM STYLE */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/todas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .paragraph {
+	color: #f4f4f4;
+	font-size: 28px;
+	text-align: center;
+}
+
+/*POSITION*/
+
+
+.section {
+    width: 69%;
+    float: left;
+}
+
+.sidebar{
+    width: 30%;
+    float: left;
+    margin-top:-2032px;
+    margin-bottom: -200px;
+}
+
+.clearfix{
+    float:none;
+    clear: both;
+}
+
+.sidebar .first{
+    padding-top:150px;
+}
+
+.sidebar .second{
+    padding-top:150px;
+}
+
+.sidebar .third{
+    padding-top:150px;
+}
+
+.sidebar .four{
+    padding-top:150px;
+}
+
+.img_bar{
+    width: 302.688px;
+    height: 199.266px; 
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    font-size: 20px;
+    font-weight: bold;
+    color: #191919;
+}
+
+.corazon {
+    color: #c23b22;
+}
