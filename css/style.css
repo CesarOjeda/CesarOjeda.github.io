@@ -1,10 +1,67 @@
-/* FONTS.GOOGLE */
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(font/Lato-Regular.ttf) format('ttf');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(font/Lato-Regular.ttf) format('ttf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(font/Lato-Bold.ttf) format('ttf');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(font/Lato-Bold.ttf) format('ttf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(font/Lato-Black.ttf) format('ttf');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(font/Lato-Black.ttf) format('ttf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* GENERAL STYLE */
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 16px;
     scroll-behavior: smooth;
@@ -13,12 +70,13 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
-    background: #f4f4f4;
+    background: #FBFBFB;
 }
 
 *,
 *::after,
 *::before {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -35,24 +93,32 @@ body {
 
 .title {
     font-weight: 900;
-    color: #191919;
+    color: #111111;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .subtitle {
     font-weight: 700;
-    color: #191919;
+    color: #111111;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .subsections-title {
     font-weight: 400;
-    color: #191919;
+    color: #111111;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .paragraph {
     font-weight: 400;
     line-height: 1.8;
     text-align: justify;
-    color: #191919;
+    color: #111111;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .title,
@@ -63,90 +129,116 @@ body {
 
 .menu {
     list-style-type: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
 }
 
 .item-link {
     text-decoration: none;
-    color: #f4f4f4;
+    color: #FBFBFB;
 
 }
 
 .item-link:hover {
-    color: #ccc;
+    color: #E9E9E9;
 }
 
 /* CUSTOM STYLE */
 
 .nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     position: fixed;
     top: 0;
     width: 100%;
     height: 50px;
-    padding: 0.5em;
+    padding: 8px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url('../img/todas.jpg');
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/todas.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/todas.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 85%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .header .paragraph {
-	color: #f4f4f4;
-	font-size: 28px;
-	text-align: center;
+    color: #FBFBFB;
+    font-size: 28px;
+    text-align: center;
+}
+
+.code {
+    font-family: monospace;
+	font-style: normal;
 }
 
 /*POSITION*/
-
 
 .section {
     width: 69%;
     float: left;
 }
 
-.sidebar{
+.sidebar {
     width: 30%;
     float: left;
-    margin-top:-2032px;
-    margin-bottom: -200px;
+    margin-top: -1955px;
 }
 
-.clearfix{
-    float:none;
+.clearfix {
+    float: none;
     clear: both;
 }
 
-.sidebar .first{
-    padding-top:150px;
+.sidebar .first {
+    padding-top: 150px;
 }
 
-.sidebar .second{
-    padding-top:150px;
+.sidebar .second {
+    padding-top: 150px;
 }
 
-.sidebar .third{
-    padding-top:150px;
+.sidebar .third {
+    padding-top: 150px;
 }
 
-.sidebar .four{
-    padding-top:150px;
+.sidebar .four {
+    padding-top: 150px;
 }
 
-.img_bar{
-    width: 302.688px;
-    height: 199.266px; 
+.sidebar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
@@ -156,10 +248,15 @@ body {
 
 .copyright {
     font-size: 20px;
-    font-weight: bold;
-    color: #191919;
+    font-weight: 700;
+    color: #111111;
 }
 
-.corazon {
-    color: #c23b22;
+.copyright svg {
+    width: 20px;
+    height: 20px;
+}
+
+.copyright svg {
+    fill: #DA462B;
 }

@@ -1,8 +1,8 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'Criptomonedas',
-		'Ethereum',
-		'Bitcoin'
+		'<i class="code">&lt;Criptomonedas&gt;</i>',
+		'<i class="code">&lt;Ethereum&gt;</i>',
+		'<i class="code">&lt;Bitcoin&gt;</i>'
 	],
 
 	typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
